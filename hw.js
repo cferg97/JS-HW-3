@@ -12,31 +12,52 @@ ASSIGNMENT RULES
  Create a variable and assign to it an array containing the first 5 positive numbers.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let numArray = (1,2,3,4,5)
 
 /* EXERCISE 2
  Create a variable and assign to it an object containing your name, surname, email address and age.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const myDetails = {
+    name: "Catriona",
+    surname: "Ferguson",
+    email: "c.ferguson1997@gmail.com",
+    age: 25
+}
+
+console.log(myDetails)
 
 /* EXERCISE 3
  Add to the previously created object a property with a boolean value to rappresent wheter you have or not a driving license.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const drivingLicense = myDetails.age >=17 ? "true": "false"
+myDetails ['driving license'] = drivingLicense
+
+console.log(myDetails)
+
 
 /* EXERCISE 4
  Remove from the previously created object the age property.
 */
 
-/* WRITE YOUR ANSWER HERE */
+delete myDetails.age 
+
+console.log(myDetails)
 
 /* EXERCISE 5
  Create a second object with another name, surname, email address and verify that this object has a different email address than the previous one.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const otherDetails = {
+    name: "Bob",
+    surname: "Smith",
+    email: "email@email.com"
+}
+
+let checkEmail = myDetails.email === otherDetails.email ? "the same" : "not the same"
+
+console.log("The emails are " +checkEmail)
 
 /* EXERCISE 6
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
@@ -44,21 +65,35 @@ ASSIGNMENT RULES
  Write an algorithm that calculates the total cost to charge the user with.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let totalShoppingCart = 50
+
+let postage = totalShoppingCart >= 50 ? 0 : 10
+let checkoutTotal = totalShoppingCart + postage
+console.log("Your total is: " + checkoutTotal)
+
 
 /* EXERCISE 7
  You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
 */
+totalShoppingCart = 56
+let discount = (totalShoppingCart / 100)*20 
+checkoutTotal = (totalShoppingCart - discount)
+postage = checkoutTotal >= 50 ? 0 : 10
+let totalCost = checkoutTotal + postage
 
-/* WRITE YOUR ANSWER HERE */
+console.log("Your total with discount and postage is: " +totalCost)
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
  Then clone it 5 times, and change the licensePlate for each cloned car without affecting the original one.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const carDetails = {
+    brand: "Fiat",
+    model: "500e",
+    licensePlate: "1357"
+}
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.

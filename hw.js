@@ -92,36 +92,66 @@ console.log("Your total with discount and postage is: " +totalCost)
 const carDetails = {
     brand: "Fiat",
     model: "500e",
-    licensePlate: "1357"
+    licensePlate: "1657"
 }
+console.log(carDetails)
+
+const carDetails2 = Object.assign({}, carDetails)
+carDetails2 ["licensePlate"] = "1337"
+console.log(carDetails2)
+
+const carDetails3 = Object.assign({}, carDetails)
+carDetails3["licensePlate"] = "5555"
+console.log(carDetails3)
+
+const carDetails4 = Object.assign({}, carDetails)
+carDetails4["licensePlate"] = "2678"
+console.log(carDetails4)
+
+const carDetails5 = Object.assign({}, carDetails)
+carDetails5["licensePlate"] = "1234"
+console.log(carDetails5)
+
+const carDetails6 = Object.assign({}, carDetails)
+carDetails6["licensePlate"] = "9696"
+console.log(carDetails6)
+
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const carsForRent = [carDetails, carDetails2, carDetails3, carDetails4, carDetails5, carDetails6]
+console.log(carsForRent)
 
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const carsForRent2 = carsForRent.slice(1,-1)
+console.log(carsForRent2)
 
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
 
-/* WRITE YOUR ANSWER HERE */
+console.log("\nCar brand: " + carDetails.brand + " " + "\nModel: " + carDetails.model + " " + "\nLicense Plate: " + carDetails.licensePlate)
 
 /* EXERCISE 12
  Create a new variable called carsForSale assigning to it an empty array, and then insert 3 cars into it.
  Create a new variable called totalCars and assign to it the total number of cars present in the carsForSale and carsForRent arrays.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const carsForSale = []
+carsForSale.push(carDetails, carDetails2, carDetails3)
+console.log(carsForSale)
+
+totalCars = carsForSale.length + carsForRent.length
+console.log(totalCars)
+
 
 /* EXERCISE 13
  Using a loop, print to the console all the data for each car in the carsForSale array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+for 

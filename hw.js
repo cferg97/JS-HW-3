@@ -25,6 +25,7 @@ const myDetails = {
     age: 25
 }
 
+console.log("-----Exercise 2-----")
 console.log(myDetails)
 
 /* EXERCISE 3
@@ -34,6 +35,7 @@ console.log(myDetails)
 const drivingLicense = myDetails.age >=17 ? true : false
 myDetails ['driving license'] = drivingLicense
 
+console.log("-----Exercise 3-----")
 console.log(myDetails)
 
 
@@ -43,6 +45,7 @@ console.log(myDetails)
 
 delete myDetails.age 
 
+console.log("-----Exercise 4-----")
 console.log(myDetails)
 
 /* EXERCISE 5
@@ -57,6 +60,8 @@ const otherDetails = {
 
 let checkEmail = myDetails.email === otherDetails.email ? "the same" : "not the same"
 
+
+console.log("-----Exercise 5-----")
 console.log("The emails are " +checkEmail)
 
 /* EXERCISE 6
@@ -69,6 +74,7 @@ let totalShoppingCart = 50
 
 let postage = totalShoppingCart >= 50 ? 0 : 10
 let checkoutTotal = totalShoppingCart + postage
+console.log("-----Exercise 6-----")
 console.log("Your total is: " + checkoutTotal)
 
 
@@ -82,6 +88,7 @@ checkoutTotal = (totalShoppingCart - discount)
 postage = checkoutTotal >= 50 ? 0 : 10
 let totalCost = checkoutTotal + postage
 
+console.log("-----Exercise 7-----")
 console.log("Your total with discount 20% discount and postage is: " +totalCost.toFixed(2))
 
 /* EXERCISE 8
@@ -94,6 +101,8 @@ const carDetails = {
     model: "500e",
     licensePlate: "1657"
 }
+
+console.log("-----Exercise 8-----")
 console.log(carDetails)
 
 const carDetails2 = Object.assign({}, carDetails)
@@ -122,6 +131,7 @@ console.log(carDetails6)
 */
 
 const carsForRent = [carDetails, carDetails2, carDetails3, carDetails4, carDetails5, carDetails6]
+console.log("-----Exercise 9-----")
 console.log(carsForRent)
 
 /* EXERCISE 10
@@ -129,12 +139,13 @@ console.log(carsForRent)
 */
 
 const carsForRent2 = carsForRent.slice(1,-1)
+console.log("-----Exercise 10-----")
 console.log(carsForRent2)
 
 /* EXERCISE 11
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
-
+console.log("-----Exercise 11-----")
 console.log("\nCar brand: " + carDetails.brand + " " + "\nModel: " + carDetails.model + " " + "\nLicense Plate: " + carDetails.licensePlate)
 
 /* EXERCISE 12
@@ -144,15 +155,18 @@ console.log("\nCar brand: " + carDetails.brand + " " + "\nModel: " + carDetails.
 
 const carsForSale = []
 carsForSale.push(carDetails, carDetails2, carDetails3)
+console.log("-----Exercise 12-----")
 console.log(carsForSale)
 
 totalCars = carsForSale.length + carsForRent.length
-console.log(totalCars)
+console.log("Number of cars in total: "+ totalCars)
 
 
 /* EXERCISE 13
  Using a loop, print to the console all the data for each car in the carsForSale array.
 */
+
+console.log("-----Exercise 13-----")
 for (let i in carsForSale){
     console.log(carsForSale[i])
 }

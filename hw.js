@@ -31,7 +31,7 @@ console.log(myDetails)
  Add to the previously created object a property with a boolean value to rappresent wheter you have or not a driving license.
 */
 
-const drivingLicense = myDetails.age >=17 ? "true": "false"
+const drivingLicense = myDetails.age >=17 ? true : false
 myDetails ['driving license'] = drivingLicense
 
 console.log(myDetails)
@@ -76,13 +76,13 @@ console.log("Your total is: " + checkoutTotal)
  You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
 */
-totalShoppingCart = 56
+totalShoppingCart = 95
 let discount = (totalShoppingCart / 100)*20 
 checkoutTotal = (totalShoppingCart - discount)
 postage = checkoutTotal >= 50 ? 0 : 10
 let totalCost = checkoutTotal + postage
 
-console.log("Your total with discount and postage is: " +totalCost)
+console.log("Your total with discount 20% discount and postage is: " +totalCost.toFixed(2))
 
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.

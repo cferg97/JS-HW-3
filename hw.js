@@ -153,5 +153,6 @@ console.log(totalCars)
 /* EXERCISE 13
  Using a loop, print to the console all the data for each car in the carsForSale array.
 */
-
-for 
+for (let i in carsForSale){
+    console.log(carsForSale[i])
+}
